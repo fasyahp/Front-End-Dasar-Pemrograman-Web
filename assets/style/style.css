@@ -1,0 +1,163 @@
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+   background-color: #EAC3F7;
+}
+
+h2 {
+   color: #00a2c6
+}
+ 
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+nav a:hover {
+   font-weight: bold;
+}
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+nav {
+   background-color: #F95BEF;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+}
+
+.jumbotron {
+   font-size: 20px;
+   padding: 60px;
+   background-color: #D15BF9;
+   text-align: center;
+   color: white;
+}
+
+.featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+.card {
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.profile header {
+   text-align: center;
+}
+.profile img {
+   width: 200px;
+}
+ 
+footer {
+   padding: 20px;
+   color: gray;
+   background-color: white;
+   text-align: center;
+   font-weight: bold;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+* {
+   box-sizing: border-box;
+}
+
+header {
+   display: inline;
+}
+
+.flex-container{
+   display: flex;
+   flex-direction: row;
+}
+.flex-container > div{
+   /*background-color: #f1f1f1;*/
+   margin: 10px;
+   padding: 10px;
+   /*font-size: 30px;*/
+}
+.box-card{
+   background-color: #FFD3B4; /*FFBCBC*/
+   box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   padding: 20px;
+   margin-top: 20px;
+}
+.foto{
+   width: 250px;
+   height: 200px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 8px;
+   /*box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.2);*/
+}
+h3{
+   text-align: center;
+}
+.image{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.button {
+   background-color: #4CAF50;
+   color: white;
+   border: 2px solid #4CAF50;
+   padding: 10px;
+   border-radius: 8px;
+}
+.button:hover {
+   background-color: white; 
+   color: black; 
+}
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+@media screen and (max-width: 992px) {
+   ........
+ }
+  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 700px */
+ @media screen and (max-width: 600px) {
+   .flex-container {
+      margin-left: 120px;
+      flex-direction: column;
+      width: 100%;
+
+   }
+   .box-card{
+      width: 52%;
+      /*position: relative;
+      left: 100px;*/
+      /*margin-left: 100px;*/
+   }
+ }
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
